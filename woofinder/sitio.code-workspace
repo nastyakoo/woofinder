@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../sitio"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "woofinder"
+	}
+}
