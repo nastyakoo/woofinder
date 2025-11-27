@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contacto con el equipo de WoofFinder para dudas, propuestas y colaboración." />
+  <title>Contacto | WoofFinder</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrap">
+    <header id="inicio" class="site-header" role="banner">
+      <a class="logo" href="index.html" aria-label="WoofFinder - inicio">
+        <h1 class="brand">
+          <img src="assets/images/logo-woofinder.svg" alt="WoofFinder" width="160" height="28">
+        </h1>
+      </a>
+
+      <nav class="site-nav" role="navigation" aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="como-funciona.html">Cómo funciona</a></li>
+          <li><a href="seguridad-comunidad.html">Seguridad</a></li>
+          <li><a href="beneficios.html">Beneficios</a></li>
+          <li><a href="publicidad.html">Publicidad</a></li>
+          <li><a href="sobre-mi.html">Quiénes somos</a></li>
+          <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <main id="contenido" class="wrap" role="main">
+
+    <section class="content-block">
+      <header>
+        <h2>Contacto</h2>
+      </header>
+
+      <div class="grid two-cols">
+        <article>
+          <p>Si querés saber más sobre WoofFinder, proponer una colaboración, sumarte a futuras pruebas de la app o simplemente contarnos tu experiencia paseando con tu perro, podés escribirnos a través de este formulario.</p>
+          <p>También podés contactarnos directamente por correo electrónico a
+            <a href="mailto:nastyakoo@gmail.com">nastyakoo@gmail.com</a> o seguir nuestras novedades en redes sociales.</p>
+          <p>Leemos cada mensaje con atención y tratamos de responder lo antes posible.</p>
+        </article>
+
+       <form class="form-contacto" action="mailto:nastyakoo@gmail.com" method="post" enctype="text/plain">
+ <form class="form-contacto" action="#" method="post">
+          <div class="campo">
+            <label for="nombre">Nombre y apellido</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+
+          <div class="campo">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="campo">
+            <label for="motivo">Motivo de contacto</label>
+            <select id="motivo" name="motivo">
+              <option value="consulta">Consulta general</option>
+              <option value="alianza">Propuesta de alianza o marca</option>
+              <option value="beta">Quiero sumarme a la beta</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn cta">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="wrap">
+      <nav class="social" aria-label="Redes sociales">
+        <ul>
+          <li><a href="https://www.instagram.com" target="_blank" rel="noopener">
+            <img src="assets/images/social/instagram.svg" alt="Instagram"></a></li>
+          <li><a href="https://www.tiktok.com" target="_blank" rel="noopener">
+            <img src="assets/images/social/tiktok.svg" alt="TikTok"></a></li>
+          <li><a href="https://www.youtube.com" target="_blank" rel="noopener">
+            <img src="assets/images/social/youtube.svg" alt="YouTube"></a></li>
+          <li><a href="https://www.facebook.com" target="_blank" rel="noopener">
+            <img src="assets/images/social/x.svg" alt="X"></a></li>
+        </ul>
+      </nav>
+
+      <section class="authors" aria-label="Autores y datos de la cursada">
+        <h3>Autores</h3>
+
+        <ul class="author-list">
+          <li>
+            <figure>
+              <img src="assets/images/authors/nastya.jpg" alt="Foto de Anastasiia Zykova" width="72" height="72">
+              <figcaption>
+                <strong>Anastasiia Zykova (Nastya Ko)</strong><br>
+                <span>Diseño Multimedial — Da Vinci</span>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+
+        <div class="course">
+          <dl>
+            <dt>Materia</dt><dd>Lógica de Programación</dd>
+            <dt>Turno</dt><dd>Mañana “AP”</dd>
+            <dt>Comisión</dt><dd>DMM1AP</dd>
+            <dt>Docente</dt><dd>Omar Toyos</dd>
+            <dt>Año de cursada</dt><dd><span id="year"></span></dd>
+          </dl>
+        </div>
+      </section>
+
+      <p class="legal">© <span id="year-copy"></span> WoofFinder. Proyecto académico — Final.</p>
+    </div>
+  </footer>
+
+  <script>
+    const y = new Date().getFullYear();
+    document.getElementById('year').textContent = y;
+    document.getElementById('year-copy').textContent = y;
+  </script>
+</body>
+</html>
