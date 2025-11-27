@@ -1,0 +1,12 @@
+Carrera: Diseño Multimedial
+Materia: Logica de programacion
+Cuatrimestre: 1º
+Año: 2025
+Turno: Mañana "AP"
+Comisión: DMM1AP
+Modalidad: Presencial
+Instancia de evaluación: Segundo Parcial
+Docente: Omar Toyos
+Integrantes:
+- Anastasiia Zykova (Nastya Ko) — email: nastyakoo@gmail.com — foto: assets/images/authors/nastya.jpg
+URL publicado: https://tu-dominio-o-netlify.app (si corresponde)
